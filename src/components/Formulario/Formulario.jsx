@@ -12,6 +12,12 @@ import Detalle from "./Detalle";
 // componentes puedan consumir un estado global.
 
 const Formulario = () => {
+  //   const [nameInput, setNameInput] = useState("");
+  //   const handleOnChange = (event) => {
+  //     const nameValue = event.target.value;
+  //     setNameInput(nameValue);
+  //   };
+  // console.log('nameInput: ', nameInput);
   return (
     <>
       <header className="form-header">
@@ -30,19 +36,15 @@ const Formulario = () => {
           pokémon
         </p>
         <div className="cuerpo-formulario">
-          {/*
-           Si tan solo tuviesemos una manera de "encapsular" nuestros componentes
-           para que puedan acceder al estado global.
-          */}
           <div className="inputs">
             <div>
               <p className="nombre-seccion">
                 <img src={entrenador} alt="entrenador" />
                 <span>ENTRENADOR</span>
-              </p>
-              <Input name="nombre" label="Nombre" />
-              <Input name="apellido" label="Apellido" />
-              <Input name="email" label="Email" type="email" />
+              </p>              
+                <Input name="nombre" label="Nombre" />
+                <Input name="apellido" label="Apellido" />
+                <Input name="email" label="Email" type="email" />
             </div>
             <div>
               <p className="nombre-seccion">
